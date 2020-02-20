@@ -1,0 +1,11 @@
+mixin titleBLock(pagesArray)
+	.title-block
+		.title-block__title
+			h1=pagesArray[pagesArray.length - 1]
+		.title-block__crumbs
+			ul.bread-crumbs
+				- for (let i = 0; i < pagesArray.length - 1; i++)
+					li.bread-crumbs__link(itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb")
+						a(href="#" title=pagesArray[i] itemprop="url")
+							span(itemprop="title")=pagesArray[i]
+				li.bread-crumbs__this=pagesArray[pagesArray.length - 1]

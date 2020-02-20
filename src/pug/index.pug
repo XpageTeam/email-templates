@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		title Аптека
+		link(rel="stylesheet" href="css/main.css")
+	body
+		table.main-table(align="center")
+			tbody
+				tr
+					td
+						table.header
+							tbody
+								tr
+									td.side-offset.bg
+									td.bg
+									td.bg
+									td.bg
+									td.side-offset.bg
+								tr.header__content
+									td.side-offset.bg
+									td.bg.bordered-td.phone-td
+										span
+											a(href="tel: 8 (800) 200-74-03") 8 (800) 200-74-03
+									td.logo-td(rowspan="4")
+										a.logo(href="#")
+											img(src="img/mail-logo.jpg")
+									td.bg.bordered-td
+										table.soc-table(align="center")
+											tbody
+												tr
+													td
+														a(href="#")
+															img(src="img/mail-vk.png")
+													td
+														a(href="#")
+															img(src="img/mail-inst.png")
+									td.side-offset.bg
+								tr
+									td.side-offset.bg
+									td.bg
+									td.bg
+									td.side-offset.bg
+								tr
+									td.side-offset
+									td
+									td
+									td.side-offset
+				tr
+					td.top-offset
+				tr
+					td
+						table.main-content
+							tbody
+								tr
+									td.side-offset
+									td
+										table.main-content__content
+											tbody
+												tr
+													td
+														table.title-block
+															tbody
+																tr
+																	td
+																		h1 Товары недели
+																tr
+																	td.title-block__padding
+																tr
+																	td.title-block__text
+																		p Товары по акции в «Государственной аптеке».
+																			br 
+																			| Скидка действует 
+																			b.colored-text c 23 сентября по 6 октября!
+												tr
+													td.catalog-list__cont
+														table.catalog-list
+															tbody
+																- for (let i = 0; i < 6; i++)
+																	tr
+																		td.catalog-list__item
+																			table.catalog-item
+																				tbody
+																					tr
+																						td.catalog-item__img(rowspan="3")
+																							a(href="#")
+																								img(src="img/tovar-img.jpg")
+																						td.catalog-item__title
+																							h2 Зинерит
+																					tr
+																						td.catalog-item__desc
+																							p Порошок для приготовления раствора для наружного применения 30мл
+																					tr
+																						td.catalog-item__prices
+																							table.ca-prices
+																								tbody
+																									tr
+																										td.ca-prices__cur
+																											p 689 руб.
+																										td.ca-prices__last
+																											p 841 руб.
+																		td.catalog-list__item
+																			table.catalog-item
+																				tbody
+																					tr
+																						td.catalog-item__img(rowspan="3")
+																							a(href="#")
+																								img(src="img/tovar-img.jpg")
+																						td.catalog-item__title
+																							h2 Зинерит
+																					tr
+																						td.catalog-item__desc
+																							p Порошок для приготовления раствора для наружного применения 30мл
+																					tr
+																						td.catalog-item__prices
+																							table.ca-prices
+																								tbody
+																									tr
+																										td.ca-prices__cur
+																											p 689 руб.
+																										td.ca-prices__last
+																											p 841 руб.
+												tr
+													td.bot-offset
+														table.bot-text
+															tbody
+																tr
+																	td.bot-text__text
+																		p Акция распространяется заказ через сайт и розничные точки.
+																			br 
+																			| Переходите, чтобы сэкономить!
+																tr
+																	td.bot-text__btn
+																		a.bt-btn(href="#")
+																			img(src="img/mail-btn.png")
+									td.side-offset
+				tr
+					td
+						table.footer
+							tbody
+								tr
+									td.footer__text-cont
+										table.footer__text
+											tbody
+												tr
+													td.side-offset
+													td.footer__text-text
+														p Вы получили это письмо, так как совершали покупки на сайте сети «Государственная
+															br
+															| аптека» АО «Областной аптечный склад». Информация на сайте 
+															a(href="#") apteka74.ru
+															br
+															|  представлена для ознакомления и не является публичной офертой.
+													td.side-offset
+								tr
+									td.footer__unsub
+										p Для того, чтобы отписаться от этой рассылки, перейдите 
+											a(href="#") по ссылке.
